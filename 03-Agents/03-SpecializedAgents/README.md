@@ -149,6 +149,9 @@ You are:
 ## 🤖 How to Use Custom Agents with Copilot
 
 ### **Step 1: Create Agent `.md` Files**
+
+Save your agent definition files in the `starter/` folder:
+
 ```
 starter/
 ├── FrontendExpert.md
@@ -156,7 +159,79 @@ starter/
 └── QAExpert.md (optional)
 ```
 
-### **Step 2: Use with Copilot Agent Mode**
+**File Location in VS Code:**
+```
+Your Project Root
+└── 03-Agents/03-SpecializedAgents/starter/
+    ├── FrontendExpert.md
+    ├── DevOpsExpert.md
+    └── QAExpert.md
+```
+
+---
+
+### **Step 2: Reference Files in Copilot Chat**
+
+#### **Option A: Direct File Reference**
+
+In Copilot Chat or Agent Mode, reference the file directly:
+
+```
+@FrontendExpert How should I structure an accessible React form component?
+```
+
+Or with full path:
+```
+@starter/FrontendExpert.md How should I structure an accessible React form component?
+```
+
+**How to do this in VS Code:**
+1. Open Copilot Chat (`Ctrl+I` or `Ctrl+Shift+Space`)
+2. Type `@` to open file picker
+3. Search for and select `FrontendExpert.md`
+4. Type your question
+
+---
+
+#### **Option B: Copy-Paste System Prompt**
+
+If file references don't work, copy the entire file content:
+
+1. Open `DevOpsExpert.md` in VS Code
+2. Select all content (`Ctrl+A`)
+3. Copy (`Ctrl+C`)
+4. Open Copilot Chat
+5. Paste content + your question:
+
+```
+# DevOps Expert Agent
+
+## Role
+You are a DevOps/Infrastructure specialist...
+[rest of file content]
+
+Now, using this expertise, answer: How do I set up a GitHub Actions pipeline for .NET 8?
+```
+
+---
+
+#### **Option C: Use in Copilot Agent Mode**
+
+1. Open Copilot Agent Mode (via Copilot menu or shortcut)
+2. Select "Create Custom Agent" or "Use Custom Persona"
+3. Choose from available agent files
+4. Ask your questions
+
+**Or manually in Chat:**
+```
+I want to use the DevOps Expert agent from starter/DevOpsExpert.md.
+
+[Then ask your questions]
+```
+
+---
+
+### **Step 3: Use with Copilot Agent Mode**
 
 **Method 1: Inline System Prompt**
 Open Copilot Agent and paste:
@@ -177,7 +252,9 @@ Using the DevOpsExpert agent definition, answer these CI/CD questions:
 3. How should I monitor a production Kubernetes cluster?
 ```
 
-### **Step 3: Ask Domain-Specific Questions**
+---
+
+### **Step 4: Ask Domain-Specific Questions**
 
 **Questions for DevOpsExpert:**
 - "Design a complete CI/CD pipeline for deploying a .NET Core app to Kubernetes"
@@ -190,7 +267,7 @@ Using the DevOpsExpert agent definition, answer these CI/CD questions:
 - "What's the best approach for managing state in a large React application?"
 - "Design a responsive navigation component that works on mobile"
 
-### **Step 4: Compare Responses**
+### **Step 5: Compare Responses**
 Ask the same question to different agents and compare:
 - **DevOpsExpert:** Focuses on deployment and infrastructure
 - **FrontendExpert:** Focuses on user experience and accessibility
@@ -236,6 +313,49 @@ After this exercise, you'll understand:
 - How to compare responses across different agents
 
 **Congratulations!** You've completed all 3 advanced agent exercises.
+
+---
+
+## 📚 Quick Reference: Using Agent Files in Copilot
+
+### **File Locations**
+```
+Your Project Root/
+└── 03-Agents/03-SpecializedAgents/starter/
+    ├── FrontendExpert.md
+    ├── DevOpsExpert.md
+    └── QAExpert.md
+```
+
+### **Method 1: File Reference (Recommended)**
+In Copilot Chat:
+```
+@FrontendExpert How should I structure an accessible form?
+```
+
+Or with path:
+```
+@03-Agents/03-SpecializedAgents/starter/DevOpsExpert.md Design a CI/CD pipeline
+```
+
+### **Method 2: Copy-Paste Content**
+1. Open agent `.md` file in VS Code
+2. Copy all content (`Ctrl+A` → `Ctrl+C`)
+3. Paste in Copilot Chat + your question
+4. Ask your question
+
+### **Method 3: Copilot Chat Context**
+Reference the agent in your chat:
+```
+Using the persona from DevOpsExpert.md, answer:
+[Your question here]
+```
+
+### **Where Copilot Finds Files**
+- ✅ Files in your project workspace (starter/ folder)
+- ✅ Files referenced with `@filename`
+- ✅ Files referenced with relative paths
+- ✅ Content pasted directly into chat
 
 ---
 

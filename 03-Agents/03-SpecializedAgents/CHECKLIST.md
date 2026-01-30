@@ -6,16 +6,16 @@ Use this checklist to verify your agent creation and usage. Aim for **80%+ compl
 
 ## ✅ Agent Definition Files (10 items)
 
-- [ ] FrontendExpert.md created
-- [ ] DevOpsExpert.md created
-- [ ] QAExpert.md created (optional, but recommended)
+- [ ] FrontendExpert.md created in starter/ folder
+- [ ] DevOpsExpert.md created in starter/ folder
+- [ ] QAExpert.md created in starter/ folder (optional)
 - [ ] Each agent has clear Role section
 - [ ] Each agent has Expertise Areas listed (8+ areas)
 - [ ] Each agent has distinct Personality traits (3-5 traits)
 - [ ] Each agent has Response Guidelines (4-6 guidelines)
 - [ ] Each agent has Example Topics section
 - [ ] All markdown files are well-formatted
-- [ ] Files are in starter/ folder
+- [ ] Files are saved in correct location (starter/ folder)
 
 ---
 
@@ -60,7 +60,10 @@ Use this checklist to verify your agent creation and usage. Aim for **80%+ compl
 
 ## ✅ Agent Usage with Copilot (15 items)
 
-- [ ] Opened Copilot Agent Mode
+- [ ] Knows where agent files are saved (starter/ folder)
+- [ ] Can reference agent files in Copilot Chat with @filename
+- [ ] Can use file path reference: @03-Agents/03-SpecializedAgents/starter/DevOpsExpert.md
+- [ ] Can copy-paste agent file content into Copilot Chat
 - [ ] Successfully used FrontendExpert agent with a question
 - [ ] FrontendExpert gave UI/component-focused answer
 - [ ] Successfully used DevOpsExpert agent with a CI/CD question
@@ -72,9 +75,6 @@ Use this checklist to verify your agent creation and usage. Aim for **80%+ compl
 - [ ] Noted differences in response focus per agent
 - [ ] DevOpsExpert emphasized automation and deployment
 - [ ] FrontendExpert emphasized UX and accessibility
-- [ ] Responses were relevant to agent specialization
-- [ ] Agents stayed in character and expertise
-- [ ] Tested at least 2 agents with multiple questions
 
 ---
 
