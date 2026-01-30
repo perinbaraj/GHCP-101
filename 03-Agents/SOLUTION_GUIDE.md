@@ -696,11 +696,94 @@ public class OrderItem
 You now understand:
 - **01-Basics:** Copilot fundamentals (autocomplete, chat, slash commands)
 - **02-Modes:** Ask, Edit, Plan modes for analysis and refactoring
-- **03-Agents:** Autonomous workflows and microservice architectures
+- **03-Agents:** Autonomous workflows, task delegation, and specialized agents
 
 ---
 
-## 🚀 Next: Application Challenges
+## Exercise 10: Custom Agent Modes — Creating Domain Expert Agents
+
+### 📝 Overview
+
+Create custom agent personas as `.md` files and use them with GitHub Copilot Agent Mode. Focus on:
+- Creating `.md` files that define agent expertise and personality
+- Using agents with Copilot's Agent Mode
+- Asking specialized CI/CD questions to DevOps agents
+- Comparing responses across different agent specializations
+
+---
+
+### 📄 Agent File Structure
+
+Each agent is defined in a simple Markdown file with these sections:
+
+```
+# Agent Name
+
+## Role
+Brief description of the agent's expertise area
+
+## Expertise Areas
+- List of specific technologies and domains
+- 8+ areas of specialization
+
+## Personality
+3-5 personality traits that shape responses
+
+## Response Guidelines
+4-6 principles guiding recommendations
+
+## Example Topics You Handle Well
+10+ example topics for this agent
+```
+
+---
+
+### 💻 DevOps Agent Usage Examples
+
+When you use DevOpsExpert agent:
+
+**Ask:** "Design a GitHub Actions workflow for .NET 8 app with testing and Kubernetes deployment"
+
+**Expected Response:** DevOps-focused with:
+- Build stages and caching
+- Test execution strategy
+- Docker image creation
+- Kubernetes deployment manifest
+- Rollback procedures
+- Monitoring setup
+
+**Won't Include:** UI component design, user experience focus, or QA test coverage strategies
+
+---
+
+### ❓ CI/CD Questions for DevOps Expert
+
+1. "How do I set up automated testing in GitHub Actions?"
+2. "What's the best strategy for zero-downtime deployments?"
+3. "How should I structure a multi-stage Docker build?"
+4. "What secrets management should I use in CI/CD?"
+5. "How do I monitor a production Kubernetes cluster?"
+6. "What's your approach to database migrations in CI/CD?"
+7. "How do I implement canary deployments?"
+8. "What logging and observability should I set up?"
+
+---
+
+### 📊 Comparing Agents
+
+**Same Question:** "How should we manage configuration?"
+
+| Agent | Focus | Perspective |
+|-------|-------|------------|
+| **DevOpsExpert** | Infrastructure, secrets, environment vars | Operational & deployment |
+| **FrontendExpert** | Client config, feature flags, build-time | User-facing & UX |
+| **QAExpert** | Config testing, environment setup | Testing & validation |
+
+Each brings different expertise!
+
+---
+
+## 🏆 Next: Application Challenges
 
 Choose one of the 3 App Challenge templates:
 1. **TodoAPI** - Build a complete todo application
