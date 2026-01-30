@@ -1,13 +1,13 @@
-# Solution Guide: 03-Agents Exercises
+# Solution Guide: 03-Agents Exercises (Revised)
 
-This guide demonstrates advanced Copilot Agent Mode usage for autonomous workflows and distributed microservices.
+Comprehensive guide for hands-on GitHub Copilot Agent Mode exercises with task delegation and specialized agent patterns.
 
 ---
 
-## Exercise 8: CLI Tool Agent — Autonomous Execution
+## Exercise 8: GitHub Copilot Agent Mode Fundamentals
 
 ### 📝 Overview
-Build a file conversion agent that autonomously handles multi-step workflows: validation → conversion strategy selection → execution → output validation → reporting.
+Learn practical Agent Mode usage by building a Personal Finance Dashboard API. This exercise focuses on letting agents handle complex task breakdown and multi-step reasoning.
 
 ---
 
