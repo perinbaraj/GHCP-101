@@ -1,4 +1,4 @@
-﻿# GitHub Copilot Hands-On Fundamentals with .NET
+# GitHub Copilot Hands-On Fundamentals with .NET
 
 A comprehensive, progressive training program to master GitHub Copilot for .NET/C# development. Learn from basic code generation to autonomous agentic workflows in 4 sections with 12+ hands-on exercises and a real-world 60-minute app challenge.
 
@@ -11,10 +11,10 @@ A comprehensive, progressive training program to master GitHub Copilot for .NET/
 ### **Section 1: Basics**
 Build foundational Copilot skills with console apps.
 
-1. [**01-Calculator**](01-Basics/01-Calculator/README.md) — Autocomplete & Chat basics
-2. [**02-StringHandler**](01-Basics/02-StringHandler/README.md) — String manipulation & refactoring
-3. [**03-ArrayOperations**](01-Basics/03-ArrayOperations/README.md) — LINQ & `/tests` command
-4. [**04-FileProcessor**](01-Basics/04-FileProcessor/README.md) — Async/await & `/explain`
+1. [**00-CodeCompletion-Basics**](01-Basics/00-CodeCompletion-Basics/README.md) — Autocomplete & Tab completion
+2. [**01-Comment-To-Code**](01-Basics/01-Comment-To-Code/README.md) — Comment-driven code generation
+3. [**02-Chat-Fundamentals**](01-Basics/02-Chat-Fundamentals/README.md) — @/# context, slash commands
+4. [**03-Inline-Chat-Refactoring**](01-Basics/03-Inline-Chat-Refactoring/README.md) — Inline refactoring with `Ctrl+I`
 
 ### **Section 2: Modes**
 Learn advanced Copilot features for real-world workflows.
@@ -59,10 +59,10 @@ Build real-world applications using any tech stack.
 ### **Section 1: Copilot Basics**
 Learn foundational Copilot features: autocomplete, Chat, and slash commands.
 
-- **01-Calculator** — Simple arithmetic operations with autocomplete and `/doc` slash command
-- **02-StringHandler** — String manipulation using Chat for refactoring suggestions
-- **03-ArrayOperations** — Array/list operations with `/tests` for unit test generation
-- **04-FileProcessor** — File I/O with `/explain` for understanding complex patterns
+- **00-CodeCompletion-Basics** — Autocomplete & Tab completion
+- **01-Comment-To-Code** — Comment-driven generation & validation
+- **02-Chat-Fundamentals** — @/# context, `/tests`, `/explain`, `/fix`
+- **03-Inline-Chat-Refactoring** — Inline refactoring & error handling
 
 **Key Skills:** Code generation, Chat interaction, slash commands, inline refactoring
 
@@ -235,10 +235,10 @@ dotnet build
 **Section 1: Basics** - Learn Copilot fundamentals
 | Exercise | Focus | Skills |
 |----------|-------|--------|
-| 01-Calculator | Autocomplete & Chat | Code generation, Chat basics |
-| 02-StringHandler | String manipulation | Refactoring, LINQ |
-| 03-ArrayOperations | Arrays & LINQ | `/tests` slash command, testing |
-| 04-FileProcessor | Async/File I/O | `/explain`, async/await |
+| 00-CodeCompletion-Basics | Autocomplete & Tab completion | Code generation basics |
+| 01-Comment-To-Code | Comment-driven generation | Comments, LINQ, validation |
+| 02-Chat-Fundamentals | Chat & context | @/# context, slash commands, tests |
+| 03-Inline-Chat-Refactoring | Inline refactoring | Error handling, async/await |
 
 **Section 2: Modes** - Advanced Copilot workflows
 | Exercise | Focus | Skills |
@@ -266,7 +266,7 @@ dotnet build
 - ✅ Every exercise has README.md with objectives & Copilot prompts
 - ✅ Every exercise has CHECKLIST.md for self-assessment (40-70 items)
 - ✅ **3 SOLUTION_GUIDE.md files** — Comprehensive solutions with multiple prompting strategies (3,200+ lines total)
-  - [01-Basics/SOLUTION_GUIDE.md](01-Basics/SOLUTION_GUIDE.md) — Calculator, StringHandler, ArrayOperations, FileProcessor
+  - [01-Basics/SOLUTION_GUIDE.md](01-Basics/SOLUTION_GUIDE.md) — CodeCompletion-Basics, Comment-To-Code, Chat-Fundamentals, Inline-Chat-Refactoring
   - [02-Modes/SOLUTION_GUIDE.md](02-Modes/SOLUTION_GUIDE.md) — AskMode, EditMode, PlanMode
   - [03-Agents/SOLUTION_GUIDE.md](03-Agents/SOLUTION_GUIDE.md) — AgentMode-Fundamentals, TaskDelegation-WithMCP, SpecializedAgents
 - ✅ `docs/exercise-guidelines.md` — How to use each exercise
@@ -289,14 +289,14 @@ GHCP-101/
 │
 ├── 01-Basics/ (4 exercises)
 │   ├── SOLUTION_GUIDE.md ⭐ (comprehensive solutions for all Basics exercises)
-│   ├── 01-Calculator/
+│   ├── 00-CodeCompletion-Basics/
 │   │   ├── README.md (objectives & Copilot prompts)
 │   │   ├── CHECKLIST.md (self-assessment)
 │   │   ├── starter/ (code to complete)
 │   │   └── solution/ (reference)
-│   ├── 02-StringHandler/
-│   ├── 03-ArrayOperations/
-│   └── 04-FileProcessor/
+│   ├── 01-Comment-To-Code/
+│   ├── 02-Chat-Fundamentals/
+│   └── 03-Inline-Chat-Refactoring/
 │
 ├── 02-Modes/ (3 exercises)
 │   ├── SOLUTION_GUIDE.md ⭐ (comprehensive solutions for all Modes exercises)
@@ -409,9 +409,9 @@ Each exercise folder contains:
 |---------|--------|----------|----------|
 | Chat | `Ctrl+I` | Ask questions, generate code | All |
 | Inline Chat | `Ctrl+Shift+Space` | Refactor highlighted code | All |
-| /explain | In Chat | Understand complex code | FileProcessor, others |
-| /doc | In Chat | Generate XML documentation | Calculator, others |
-| /tests | In Chat | Generate unit tests | ArrayOperations, others |
+| /explain | In Chat | Understand complex code | Inline-Chat-Refactoring, others |
+| /doc | In Chat | Generate XML documentation | Comment-To-Code, others |
+| /tests | In Chat | Generate unit tests | Chat-Fundamentals, others |
 | /fix | In Chat | Debug errors | Debug-focused exercises |
 | @workspace | In Chat | Reference project context | Later exercises |
 | #selection | In Chat | Reference highlighted code | All |
@@ -433,7 +433,7 @@ Each exercise folder contains:
 
 ## 🚀 Start Your Journey
 
-**Begin here:** Go to [01-Basics/01-Calculator](01-Basics/01-Calculator/) and read the README.md
+**Begin here:** Go to [01-Basics/00-CodeCompletion-Basics](01-Basics/00-CodeCompletion-Basics/) and read the README.md
 
 Then follow this exact sequence:
 1. ✅ All 4 Basics exercises
@@ -448,7 +448,7 @@ Then follow this exact sequence:
 ## 📖 Step-by-Step for Each Exercise
 
 ```bash
-cd 01-Basics/01-Calculator  # or any exercise folder
+cd 01-Basics/00-CodeCompletion-Basics  # or any exercise folder
 
 # Then:
 1. Read README.md - understand objectives & Copilot prompts
@@ -490,7 +490,7 @@ cd 01-Basics/01-Calculator  # or any exercise folder
 
 ## 💡 Tips for Success
 
-1. **Start with 01-Calculator** — Don't jump around
+1. **Start with 00-CodeCompletion-Basics** — Don't jump around
 2. **Read each README carefully** — They have specific Copilot prompts
 3. **Use Copilot Chat actively** — Not just for code generation
 4. **Verify with checklists** — Don't move on until 80%+ complete
