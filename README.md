@@ -11,24 +11,24 @@ A comprehensive, progressive training program to master GitHub Copilot for .NET/
 ### **Section 1: Basics**
 Build foundational Copilot skills with console apps.
 
-1. [**01-Calculator**](01-Basics/01-Calculator/README.md) (20 min) — Autocomplete & Chat basics
-2. [**02-StringHandler**](01-Basics/02-StringHandler/README.md) (25 min) — String manipulation & refactoring
-3. [**03-ArrayOperations**](01-Basics/03-ArrayOperations/README.md) (30 min) — LINQ & `/tests` command
-4. [**04-FileProcessor**](01-Basics/04-FileProcessor/README.md) (35 min) — Async/await & `/explain`
+1. [**01-Calculator**](01-Basics/01-Calculator/README.md) — Autocomplete & Chat basics
+2. [**02-StringHandler**](01-Basics/02-StringHandler/README.md) — String manipulation & refactoring
+3. [**03-ArrayOperations**](01-Basics/03-ArrayOperations/README.md) — LINQ & `/tests` command
+4. [**04-FileProcessor**](01-Basics/04-FileProcessor/README.md) — Async/await & `/explain`
 
 ### **Section 2: Modes**
 Learn advanced Copilot features for real-world workflows.
 
-1. [**01-AskMode**](02-Modes/01-AskMode/README.md) (40 min) — Research & debugging patterns
-2. [**02-EditMode**](02-Modes/02-EditMode/README.md) (50 min) — Bulk refactoring transformations
-3. [**03-PlanMode**](02-Modes/03-PlanMode/README.md) (60 min) — Architectural planning
+1. [**01-AskMode**](02-Modes/01-AskMode/README.md) — Research & debugging patterns
+2. [**02-EditMode**](02-Modes/02-EditMode/README.md) — Bulk refactoring transformations
+3. [**03-PlanMode**](02-Modes/03-PlanMode/README.md) — Architectural planning
 
 ### **Section 3: Agents**
 Master GitHub Copilot Agent Mode with task delegation and specialization.
 
-1. [**01-AgentMode-Fundamentals**](03-Agents/01-AgentMode-Fundamentals/README.md) (45-60 min) — Agent Mode basics & autonomous reasoning
-2. [**02-TaskDelegation-WithMCP**](03-Agents/02-TaskDelegation-WithMCP/README.md) (50-60 min) — Delegating to agents via MCP integration
-3. [**03-SpecializedAgents**](03-Agents/03-SpecializedAgents/README.md) (45-60 min) — Configuring domain-expert agents
+1. [**01-AgentMode-Fundamentals**](03-Agents/01-AgentMode-Fundamentals/README.md) — Agent Mode basics & autonomous reasoning
+2. [**02-TaskDelegation-WithMCP**](03-Agents/02-TaskDelegation-WithMCP/README.md) — Delegating to agents via MCP integration
+3. [**03-SpecializedAgents**](03-Agents/03-SpecializedAgents/README.md) — Configuring domain-expert agents
 
 ### **Section 4: App Challenges**
 Build real-world applications using any tech stack.
@@ -56,7 +56,7 @@ Build real-world applications using any tech stack.
 
 ## 📋 Training Structure
 
-### **Section 1: Copilot Basics** (Beginner)
+### **Section 1: Copilot Basics**
 Learn foundational Copilot features: autocomplete, Chat, and slash commands.
 
 - **01-Calculator** — Simple arithmetic operations with autocomplete and `/doc` slash command
@@ -68,7 +68,7 @@ Learn foundational Copilot features: autocomplete, Chat, and slash commands.
 
 ---
 
-### **Section 2: Copilot Modes** (Intermediate)
+### **Section 2: Copilot Modes**
 Explore Ask, Edit, and Plan modes for real-world workflows.
 
 - **01-AskMode** — Research existing API patterns, debug logic issues
@@ -79,7 +79,7 @@ Explore Ask, Edit, and Plan modes for real-world workflows.
 
 ---
 
-### **Section 3: GitHub Copilot Agents** (Advanced)
+### **Section 3: GitHub Copilot Agents**
 Master Agent Mode with hands-on exercises: autonomous reasoning, task delegation, and specialized agents.
 
 - **01-AgentMode-Fundamentals** — Build a Finance Dashboard API using Agent Mode to break down complex requirements
@@ -94,12 +94,12 @@ Master Agent Mode with hands-on exercises: autonomous reasoning, task delegation
 Apply everything learned by building production-quality applications.
 
 **Path 1: Weather App (Interconnected - Full Stack)**
-- **01-WeatherApp-Frontend** — Frontend UI (React, Vue, Angular, or any framework) (45-60 min)
-- **02-WeatherApp-Backend** — Backend APIs (Node, Python, C#, Java, or any framework) (60-75 min)
-- **03-WeatherApp-Database** — Data persistence (PostgreSQL, MongoDB, or any database) (60-75 min)
+- **01-WeatherApp-Frontend** — Frontend UI (React, Vue, Angular, or any framework)
+- **02-WeatherApp-Backend** — Backend APIs (Node, Python, C#, Java, or any framework)
+- **03-WeatherApp-Database** — Data persistence (PostgreSQL, MongoDB, or any database)
 
 **Path 2: Movie Booking System (Independent - Full Stack)**
-- **04-MovieBookingSystem** — Complete system with dynamic pricing, payments, seat management (90-120 min)
+- **04-MovieBookingSystem** — Complete system with dynamic pricing, payments, seat management
 
 **Deliverable:** Working app(s) with tests, documentation, and professional code quality
 
@@ -113,10 +113,8 @@ Apply everything learned by building production-quality applications.
    cd GHCP-101
    ```
 
-2. **Pick Your Starting Point**
-   - **First Time?** Start with `01-Basics/01-Calculator`
-   - **Experienced with Copilot?** Jump to `02-Modes` or `03-Agents`
-   - **Ready to Build?** Go to `04-App-Challenge`
+2. **Start with the Basics**
+   - Complete all exercises in sequence: Basics → Modes → Agents → App Challenge
 
 3. **Follow Exercise Format**
    - Read the exercise **README.md** for objectives
@@ -234,35 +232,35 @@ dotnet build
 
 ### **12 Progressive Exercises**
 
-**Section 1: Basics** (1.5-2 hours) - Learn Copilot fundamentals
-| Exercise | Time | Focus | Skills |
-|----------|------|-------|--------|
-| 01-Calculator | 20 min | Autocomplete & Chat | Code generation, Chat basics |
-| 02-StringHandler | 25 min | String manipulation | Refactoring, LINQ |
-| 03-ArrayOperations | 30 min | Arrays & LINQ | `/tests` slash command, testing |
-| 04-FileProcessor | 35 min | Async/File I/O | `/explain`, async/await |
+**Section 1: Basics** - Learn Copilot fundamentals
+| Exercise | Focus | Skills |
+|----------|-------|--------|
+| 01-Calculator | Autocomplete & Chat | Code generation, Chat basics |
+| 02-StringHandler | String manipulation | Refactoring, LINQ |
+| 03-ArrayOperations | Arrays & LINQ | `/tests` slash command, testing |
+| 04-FileProcessor | Async/File I/O | `/explain`, async/await |
 
-**Section 2: Modes** (2-3 hours) - Advanced Copilot workflows
-| Exercise | Time | Focus | Skills |
-|----------|------|-------|--------|
-| 01-AskMode | 40 min | Ask Mode - research | Pattern analysis, debugging |
-| 02-EditMode | 50 min | Edit Mode - refactoring | Bulk transformations, consistency |
-| 03-PlanMode | 60 min | Plan Mode - design | Architecture, task breakdown |
+**Section 2: Modes** - Advanced Copilot workflows
+| Exercise | Focus | Skills |
+|----------|-------|--------|
+| 01-AskMode | Ask Mode - research | Pattern analysis, debugging |
+| 02-EditMode | Edit Mode - refactoring | Bulk transformations, consistency |
+| 03-PlanMode | Plan Mode - design | Architecture, task breakdown |
 
-**Section 3: Agents** (2-2.5 hours) - Agent Mode & Task Delegation
-| Exercise | Time | Focus | Skills |
-|----------|------|-------|--------|
-| 01-AgentMode-Fundamentals | 45-60 min | Agent autonomy, Finance Dashboard | Complex task breakdown, Agent Mode |
-| 02-TaskDelegation-WithMCP | 50-60 min | Delegation, GitHub MCP, Microservices | MCP integration, task orchestration |
-| 03-SpecializedAgents | 45-60 min | Custom domain-expert agents | Agent personas, specialization |
+**Section 3: Agents** - Agent Mode & Task Delegation
+| Exercise | Focus | Skills |
+|----------|-------|--------|
+| 01-AgentMode-Fundamentals | Agent autonomy, Finance Dashboard | Complex task breakdown, Agent Mode |
+| 02-TaskDelegation-WithMCP | Delegation, GitHub MCP, Microservices | MCP integration, task orchestration |
+| 03-SpecializedAgents | Custom domain-expert agents | Agent personas, specialization |
 
 **Section 4: App Challenges** - Build real apps
-| Challenge | Time | Focus | Difficulty |
+| Challenge | Focus | Difficulty |
 |-----------|------|-------|------------|
-| 01-WeatherApp-Frontend | 45-60 min | UI/HTTP integration, responsive design | Medium |
-| 02-WeatherApp-Backend | 60-75 min | REST APIs, business logic, caching | Medium |
-| 03-WeatherApp-Database | 60-75 min | Data persistence, analytics, optimization | Medium |
-| 04-MovieBookingSystem | 90-120 min | Full-stack, complex business logic, payments | Hard |
+| 01-WeatherApp-Frontend | UI/HTTP integration, responsive design | Medium |
+| 02-WeatherApp-Backend | REST APIs, business logic, caching | Medium |
+| 03-WeatherApp-Database | Data persistence, analytics, optimization | Medium |
+| 04-MovieBookingSystem | Full-stack, complex business logic, payments | Hard |
 
 ### **Complete Documentation**
 - ✅ Every exercise has README.md with objectives & Copilot prompts
@@ -361,14 +359,6 @@ After completing this training, you will:
 
 ---
 
-## ⏱️ Time Estimates
-
-| Path | Exercises | Duration | Best For |
-|------|-----------|----------|----------|
-| Complete | All 12 + 1 app | 5-8 hours | Learning everything from scratch |
-| Intermediate | 5-7 + 1 app | 3-4 hours | Deepening skills, advanced topics |
-| Quick | 3 + 1 app | 2 hours | Quick hands-on demo |
-
 ---
 
 ## ✅ Exercise Format (Same for All)
@@ -451,7 +441,7 @@ Then follow this exact sequence:
 3. ✅ All 3 Agents exercises
 4. ✅ Pick your app challenge path (Weather App 1-3 OR Movie Booking System)
 
-**Total Time:** 5-16 hours | **Total Exercises:** 12 + 4 app challenges
+**Total Exercises:** 12 + 4 app challenges
 
 ---
 
